@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能客服</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="avatar">🤖</div>
+        <div>
+            <h2>智能客服</h2>
+            <span class="status online">在线</span>
+        </div>
+        <a href="admin.html" class="admin-link">管理后台 →</a>
+    </div>
+    <div class="chat-messages" id="messages">
+        <div class="message bot">
+            <div class="msg-avatar">🤖</div>
+            <div class="msg-content">你好！我是智能客服，有什么可以帮你的？ 😊</div>
+        </div>
+    </div>
+    <div class="quick-questions">
+        <button onclick="sendQuick('怎么退货？')">怎么退货？</button>
+        <button onclick="sendQuick('运费怎么算？')">运费怎么算？</button>
+        <button onclick="sendQuick('多久能收到货？')">多久到货？</button>
+        <button onclick="sendQuick('怎么开发票？')">开发票</button>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="输入你的问题..." onkeypress="if(event.key==='Enter')sendMsg()">
+        <button onclick="sendMsg()">发送</button>
+    </div>
+</div>
+<script src="js/chat.js"></script>
+</body>
+</html>

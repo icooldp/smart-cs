@@ -1,0 +1,42 @@
+# Python 虚拟环境
+venv/
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.swp
+*.swo
+
+# Sqlite数据库文件
+*.db
+*.db‑journal
+
+# 日志
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
